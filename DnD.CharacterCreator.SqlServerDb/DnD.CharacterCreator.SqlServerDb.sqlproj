@@ -60,17 +60,23 @@
     <Folder Include="Character" />
     <Folder Include="TestData" />
     <Folder Include="StaticData" />
-    <Folder Include="StaticData\Character" />
+    <Folder Include="StaticData\Core" />
+    <Folder Include="Spell" />
+    <Folder Include="Class" />
+    <Folder Include="Core" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Character\Ability.sql" />
     <Build Include="Character\Character.sql" />
-    <None Include="StaticData\Character\AbilityData.sql" />
+    <None Include="StaticData\Core\AbilityData.sql" />
+    <Build Include="Core\Ability.sql" />
+    <Build Include="Core\Skill.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DnD.CharacterCreator.SqlServerDb.publish.xml" />
+    <Build Include="Core\CoreSchema.sql" />
+    <None Include="StaticData\Core\SkillData.sql" />
   </ItemGroup>
 </Project>

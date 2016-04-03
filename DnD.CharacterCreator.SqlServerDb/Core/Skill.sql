@@ -1,0 +1,7 @@
+﻿CREATE TABLE [Core].[Skill]
+(
+	[SkillId] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[AbilityId] CHAR(3) FOREIGN KEY REFERENCES [Core].[Ability](AbilityId) NOT NULL,
+	[Name] VARCHAR(20) NOT NULL,
+	[Description] VARCHAR(200) NOT NULL,
+)

@@ -10,4 +10,4 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-:r ".\StaticData\Character\AbilityData.sql"
+:r ".\StaticData\Core\AbilityData.sql"
